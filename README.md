@@ -1,36 +1,187 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dynamic Signup Form
 
-## Getting Started
+A responsive **Dynamic Signup Form** built with **Next.js**, **TypeScript**, **React Hook Form**, and **Material UI**. The application renders form fields dynamically from a JSON configuration, allowing the UI to adapt automatically when the JSON changes.
 
-First, run the development server:
+
+## 🚀 Features
+
+* Dynamic form generation from JSON
+* React Hook Form validation
+* Material UI responsive interface
+* Password field support
+* Dynamic field rendering based on field type
+
+  * Text
+  * Password
+  * Dropdown (List)
+  * Radio Button
+* Required/Optional field support
+* Min/Max length validation
+* Email validation
+* Local Storage persistence
+* Responsive design
+* Clean, modular, and reusable component architecture
+
+---
+
+## 🛠️ Tech Stack
+
+* Next.js
+* TypeScript
+* React Hook Form
+* Material UI (MUI)
+
+---
+
+# 📁 Project Structure
+
+```text
+.
+├── data
+│   └── form.json          # Dynamic form configuration
+├── src
+│   ├── app
+│   ├── components
+│   ├── hooks
+│   ├── lib
+│   ├── types
+│   └── utils
+└── README.md
+```
+
+---
+
+# 📄 Dynamic JSON Configuration
+
+The form is completely driven by the JSON configuration located at:
+
+```text
+data/form.json
+```
+
+Simply update the JSON file to:
+
+* Change field labels
+* Change field types
+* Make fields required or optional
+* Update default values
+* Add or remove fields
+* Modify dropdown options
+* Modify radio button options
+* Configure validation rules
+
+No UI code changes are required.
+
+---
+
+## ✅ Supported Field Types
+
+| Field Type      | Supported |
+| --------------- | --------- |
+| TEXT            | ✅         |
+| PASSWORD        | ✅         |
+| LIST (Dropdown) | ✅         |
+| RADIO           | ✅         |
+
+---
+
+## ✅ Validation
+
+The application supports:
+
+* Required fields
+* Minimum length
+* Maximum length
+* Email validation
+* Password validation
+
+---
+
+## 💾 Data Persistence
+
+Submitted form data is automatically saved in the browser's **Local Storage** and restored when the application is reopened.
+
+---
+
+# ▶️ Getting Started
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/prasenjit1011/revest_dynamic_form.git
+```
+
+## 2. Navigate to the project
+
+```bash
+cd revest_dynamic_form
+```
+
+## 3. Install dependencies
+
+```bash
+npm install
+```
+
+or
+
+```bash
+npm i
+```
+
+## 4. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 5. Open the application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Browse to:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+http://localhost:3000/
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📷 Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Place your screenshots inside:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+screenshots/
+```
 
-## Deploy on Vercel
+Example:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```text
+screenshots/
+├── dynamic-form.png
+├── validation.png
+└── success-message.png
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📌 Assignment Highlights
+
+* Dynamic JSON-driven form rendering
+* Material UI components
+* React Hook Form integration
+* Responsive UI
+* Local Storage persistence
+* Clean and maintainable architecture
+* Scalable component-based design
+
+---
+
+<p align="center">
+  <img src="./screenshots/dynamic-form.png" alt="Dynamic Signup Form" width="900"/>
+</p>
+
+---
+
+## 📄 License
+
+This project was developed as part of a technical assessment for demonstration and learning purposes.
