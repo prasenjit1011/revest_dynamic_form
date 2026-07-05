@@ -2,6 +2,11 @@
 
 A responsive **Dynamic Signup Form** built with **Next.js**, **TypeScript**, **React Hook Form**, and **Material UI**. The application renders form fields dynamically from a JSON configuration, allowing the UI to adapt automatically when the JSON changes.
 
+<p align="center">
+  <img src="./screenshots/dynamic-form.png" alt="Dynamic Signup Form" width="900"/>
+</p>
+
+---
 
 ## 🚀 Features
 
@@ -173,12 +178,6 @@ screenshots/
 * Local Storage persistence
 * Clean and maintainable architecture
 * Scalable component-based design
-
----
-
-<p align="center">
-  <img src="./screenshots/dynamic-form.png" alt="Dynamic Signup Form" width="900"/>
-</p>
 
 ---
 
